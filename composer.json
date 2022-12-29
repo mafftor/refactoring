@@ -1,0 +1,26 @@
+{
+    "name": "mafftor/refactoring-task",
+    "description": "Make ugly code look better",
+    "type": "project",
+    "require": {
+        "phpunit/phpunit": "^9.5",
+        "symfony/dotenv": "^6.2"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Mafftor\\RefactoringTask\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mafftor\\RefactoringTask\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mafftor",
+            "email": "mafftor@gmail.com"
+        }
+    ]
+}
