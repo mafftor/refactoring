@@ -6,3 +6,13 @@
 5. run `php index.php input.txt` to check refactoring results
 
 *run `php ugly.php input.txt` old ugly code if needed :)*
+
+```text
+Approx expected result:
+
+1
+0.46847491738445
+1.4088527134021
+2.4360695703991
+45.225590900611
+```
