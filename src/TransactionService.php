@@ -98,13 +98,14 @@ class TransactionService
     {
         $rate = $this->exchangeRateService->get($transaction->currency);
 
-        if ($transaction->currency == 'EUR' or $rate == 0) {
-            $amntFixed = $transaction->amount;
-        }
-        if ($transaction->currency != 'EUR' or $rate > 0) {
-            $amntFixed = $transaction->amount / $rate;
+        if ($transaction->currency == 'EUR' || $rate == 0) {
+            $amountFixed = $transaction->amount;
         }
 
-        return $amntFixed;
+        if ($transaction->currency != 'EUR' || $rate > 0) {
+            $amountFixed = $transaction->amount / $rate;
+        }
+
+        return $amountFixed;
     }
 }
