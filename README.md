@@ -1,3 +1,7 @@
+### General
+Spent time on the refactoring process *4* hours.
+On relax and with no hurry 👍
+
 ### Installation
 1. Clone the repo
 2. run `composer install`
@@ -8,9 +12,8 @@
 
 *run `php ugly.php input.txt` old ugly code if needed :)*
 
+### Approx expected result
 ```text
-Approx expected result:
-
 1
 0.47
 1.42
