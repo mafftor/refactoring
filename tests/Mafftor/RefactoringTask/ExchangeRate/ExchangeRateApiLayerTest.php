@@ -13,6 +13,9 @@ class ExchangeRateApiLayerTest extends TestCase
         $this->subject = $this->createMock(ExchangeRateApiLayer::class);
     }
 
+    /**
+     * @covers \Mafftor\RefactoringTask\ExchangeRate\ExchangeRateApiLayer
+     */
     public function testGet()
     {
         $currency = 'EUR';

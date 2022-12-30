@@ -6,6 +6,9 @@ use PHPUnit\Framework\TestCase;
 
 class TransactionServiceTest extends TestCase
 {
+    /**
+     * @covers \Mafftor\RefactoringTask\TransactionService
+     */
     public function testService()
     {
         $expectedResult = "1

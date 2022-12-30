@@ -13,6 +13,9 @@ class BinListTest extends TestCase
         $this->subject = $this->createMock(BinList::class);
     }
 
+    /**
+     * @covers \Mafftor\RefactoringTask\Bin\BinList
+     */
     public function testGetCountryCode()
     {
         $bin = 45717360;
