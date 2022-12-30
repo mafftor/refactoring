@@ -70,7 +70,7 @@ class TransactionService
     {
         $result = '';
         foreach ($this->transactions as $transaction) {
-            $result .= $transaction->fixedAmount . PHP_EOL;
+            $result .= round($transaction->fixedAmount, 2) . PHP_EOL;
         }
 
         return $result;

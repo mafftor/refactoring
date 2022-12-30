@@ -1,7 +1,8 @@
 <?php
 
-namespace Mafftor\RefactoringTask\Enum;
+namespace PHPUnit\Enum;
 
+use Mafftor\RefactoringTask\Enum\Region;
 use PHPUnit\Framework\TestCase;
 
 class RegionTest extends TestCase

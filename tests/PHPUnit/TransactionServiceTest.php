@@ -1,7 +1,8 @@
 <?php
 
-namespace Mafftor\RefactoringTask;
+namespace PHPUnit;
 
+use Mafftor\RefactoringTask\TransactionService;
 use PHPUnit\Framework\TestCase;
 
 class TransactionServiceTest extends TestCase
@@ -12,10 +13,10 @@ class TransactionServiceTest extends TestCase
     public function testService()
     {
         $expectedResult = "1
-0.46969923279327
-1.4175856862858
-2.442436010525
-45.27386158875";
+0.47
+1.42
+2.44
+45.26";
 
         $subject = $this->createMock(TransactionService::class);
 

@@ -1,7 +1,8 @@
 <?php
 
-namespace Mafftor\RefactoringTask\Bin;
+namespace PHPUnit\Bin;
 
+use Mafftor\RefactoringTask\Bin\BinList;
 use PHPUnit\Framework\TestCase;
 
 class BinListTest extends TestCase

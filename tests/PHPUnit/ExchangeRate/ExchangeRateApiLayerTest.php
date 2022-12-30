@@ -1,7 +1,8 @@
 <?php
 
-namespace Mafftor\RefactoringTask\ExchangeRate;
+namespace PHPUnit\ExchangeRate;
 
+use Mafftor\RefactoringTask\ExchangeRate\ExchangeRateApiLayer;
 use PHPUnit\Framework\TestCase;
 
 class ExchangeRateApiLayerTest extends TestCase
