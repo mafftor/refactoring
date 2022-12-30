@@ -17,7 +17,7 @@ class BinList implements BinService
     public function fetch(int $bin): BinService
     {
         $result = file_get_contents(self::API_URL . $bin);
-        $this->binInfo = json_decode($result);
+        $this->binInfo = json_decode($result, true);
 
         return $this;
     }
@@ -29,6 +29,6 @@ class BinList implements BinService
      */
     public function getCountryCode(): ?string
     {
-        return $this->binInfo?->country?->alpha2;
+        return $this->binInfo['country']['alpha2'] ?? null;
     }
 }

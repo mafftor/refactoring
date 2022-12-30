@@ -66,14 +66,14 @@ class TransactionService
      *
      * @return void
      */
-    public function print(): void
+    public function print(): string
     {
         $result = '';
         foreach ($this->transactions as $transaction) {
             $result .= $transaction->fixedAmount . PHP_EOL;
         }
 
-        echo $result;
+        return $result;
     }
 
     /**

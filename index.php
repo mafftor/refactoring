@@ -17,6 +17,6 @@ $transactionService = new TransactionService(
     new ExchangeRateApiLayer($_ENV['API_KEY'])
 );
 
-$transactionService->parse($argv[1])
+echo $transactionService->parse($argv[1])
     ->processFixedAmount()
     ->print();
